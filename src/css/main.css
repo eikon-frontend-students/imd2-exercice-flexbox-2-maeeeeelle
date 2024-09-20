@@ -12,3 +12,100 @@ img,
 video {
   display: block;
 }
+
+body {
+  display: flex;
+  padding: 15px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.section {
+  display: flex;
+  background-color: #ebead2;
+  padding: 15px 0px;
+}
+
+.box {
+  background-color: hsl(0, 0%, 100%);
+  font-family: Lato;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px; /* 150% */
+  letter-spacing: 0.313px;
+  padding: 0px 30px;
+  border: 1px solid #979797;
+  display: flex;
+  justify-content: center;
+}
+
+.section-1 .box {
+  width: 50%;
+}
+
+.section-2 {
+  flex-wrap: wrap;
+}
+.section-2 .box {
+  width: 50%;
+}
+
+.section-3 {
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.section-4 {
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+  width: 50%px;
+}
+.section-4 .box {
+  padding: 15px 30px;
+  gap: 31px;
+  width: 48%;
+}
+
+
+.section-5 .box:nth-child(2),
+.section-5 .box:nth-child(3),
+.section-5 .box:nth-child(4) {
+  border: 1px solid #979797;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.section-5 .box:nth-child(2) {
+  width: 100px;
+  height: 148.026px;
+}
+.section-5 .box:nth-child(3) {
+  width: 100px;
+  height: 98.684px;
+}
+.section-5 .box:nth-child(4) {
+  width: 100px;
+  height: 197.368px;
+}
+
+.section-5 {
+  width: 1410px;
+  height: 230px;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.section-5 .box {
+  width: 100px;
+}
